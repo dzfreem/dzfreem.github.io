@@ -1,211 +1,193 @@
-M<!DOCTYPE HTML>
-<!--
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Dallas' Practice Site</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>[Your Name] | Software Developer</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #1e293b;
+      --text: #f8fafc;
+      --muted: #94a3b8;
+      --accent: #38bdf8;
+      --border: #334155;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+    .container { max-width: 900px; margin: 0 auto; }
+    header {
+      padding: 2.5rem 0 2rem;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 2.5rem;
+    }
+    h1 { font-size: 2.4rem; margin-bottom: 0.4rem; }
+    .subtitle { color: var(--accent); font-weight: 600; font-size: 1.1rem; margin-bottom: 1rem; }
+    .bio { color: var(--muted); max-width: 680px; margin-bottom: 1.5rem; }
+    .links { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+    .btn {
+      display: inline-block;
+      padding: 0.55rem 1.1rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+      border: 1px solid var(--accent);
+      color: var(--accent);
+      transition: background 0.2s, color 0.2s;
+    }
+    .btn:hover { background: var(--accent); color: var(--bg); }
+    .btn-primary { background: var(--accent); color: var(--bg); }
+    .btn-primary:hover { opacity: 0.9; }
+    h2 {
+      font-size: 1.4rem;
+      margin-bottom: 1.25rem;
+      border-left: 4px solid var(--accent);
+      padding-left: 0.75rem;
+    }
+    section { margin-bottom: 3rem; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .card h3 { font-size: 1.2rem; margin-bottom: 0.5rem; }
+    .card p { color: var(--muted); font-size: 0.95rem; margin-bottom: 1rem; }
+    .tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 1.25rem; }
+    .tag {
+      background: rgba(56, 189, 248, 0.12);
+      color: var(--accent);
+      padding: 0.2rem 0.6rem;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+    .card-links { display: flex; gap: 1rem; }
+    .card-links a { color: var(--accent); text-decoration: none; font-size: 0.9rem; font-weight: 600; }
+    .card-links a:hover { text-decoration: underline; }
+    .skills-list { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+    .skill-pill {
+      background: var(--card);
+      border: 1px solid var(--border);
+      padding: 0.45rem 0.9rem;
+      border-radius: 6px;
+      font-size: 0.9rem;
+    }
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.85rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>[Your Name]</h1>
+      <p class="subtitle">Entry-Level Software Developer &bull; B.S. Mathematics &amp; Computer Science Minor</p>
+      <p class="bio">
+        Mathematics graduate and software developer focused on building clean, algorithmic, and dependency-free applications. Experienced in translating abstract mathematical models into tested, reliable code.
+      </p>
+      <div class="links">
+        <a href="https://github.com[yourusername]" class="btn btn-primary" target="_blank">GitHub</a>
+        <a href="https://linkedin.com[yourlinkedin]" class="btn" target="_blank">LinkedIn</a>
+        <a href="mailto:[youremail@example.com]" class="btn">Email Me</a>
+      </div>
+    </header>
 
-		<!-- Sidebar -->
-			<section id="sidebar">
-				<div class="inner">
-					<nav>
-						<ul>
-							<li><a href="#intro">Welcome</a></li>
-							<li><a href="#one">Who I am</a></li>
-							<li><a href="#two">What I do</a></li>
-							<li><a href="#three">Contact Me</a></li>
-						</ul>
-					</nav>
-				</div>
-			</section>
+    <section id="projects">
+      <h2>Featured Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <div>
+            <h3>Java Linear Algebra &amp; System Solver</h3>
+            <p>
+              A lightweight Java linear algebra engine focused on numerical precision, determinant calculation, floating-point epsilon tolerance checks, and solving systems of linear equations with strict dimension validation.
+            </p>
+            <div class="tags">
+              <span class="tag">Java</span>
+              <span class="tag">OOP</span>
+              <span class="tag">Linear Algebra</span>
+              <span class="tag">Unit Testing</span>
+            </div>
+          </div>
+          <div class="card-links">
+            <a href="https://github.com[yourusername]/[matrix-repo]" target="_blank">View Source Code &rarr;</a>
+          </div>
+        </article>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+        <article class="card">
+          <div>
+            <h3>2D Graphing &amp; Calculus Visualizer</h3>
+            <p>
+              An interactive, dependency-free web application using HTML5 Canvas and vanilla JavaScript. Features a custom math expression tokenizer/parser (Shunting-Yard / RPN) and real-time coordinate plotting.
+            </p>
+            <div class="tags">
+              <span class="tag">JavaScript (ES6+)</span>
+              <span class="tag">HTML5 Canvas</span>
+              <span class="tag">CSS3</span>
+              <span class="tag">Algorithms</span>
+            </div>
+          </div>
+          <div class="card-links">
+            <a href="https://github.com[yourusername]/[graphing-repo]" target="_blank">View Source Code &rarr;</a>
+            <!-- Uncomment the line below once your visualizer is hosted on GitHub Pages -->
+            <!-- <a href="https://[yourusername].github.io/[graphing-repo]/" target="_blank">Live Demo &rarr;</a> -->
+          </div>
+        </article>
+      </div>
+    </section>
 
-				<!-- Intro -->
-					<section id="intro" class="wrapper style1 fullscreen fade-up">
-						<div class="inner">
-							<h1>Dallas Freeman</h1>
-							<p>I'm creating this website as a means to display the skills I've worked to acquire in programming and web design and development. Welcome I hope you like it.</p>
-							<ul class="actions">
-								<li><a href="#one" class="button scrolly">Learn more</a></li>
-							</ul>
-						</div>
-					</section>
+    <section id="research">
+      <h2>Published Research</h2>
+      <div class="card">
+        <div>
+          <h3>Discrete Polylogarithm Functions (2023)</h3>
+          <p>
+            Co-authored peer-reviewed paper in <em>Tatra Mountains Mathematical Publications</em> (Vol. 84) with Dr. Tom Cuchta at Fairmont State University. Funded by the NASA West Virginia Space Grant Consortium (Grant #NNX15AI01H).
+          </p>
+        </div>
+        <div class="card-links">
+          <a href="https://marshall.edu" target="_blank">Read Published Paper (PDF) &rarr;</a>
+        </div>
+      </div>
+    </section>
 
-				<!-- One -->
-					<section id="one" class="wrapper style2 spotlights">
-						<section>
-							<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Certs</h2>
-									<p>I've gone through multiple online courses and gotten small accolades that show something I guess.</p>
-									<ul class="actions">
-										<li><a href="https://www.credly.com/users/dallas-freeman.c78cfaf8" class="button" target=_blank rel="noopener noreferrer">Link to my Credly Profile</a></li>
-										<li><a href="https://www.freecodecamp.org/dzfreeman" class="button" target=_blank rel="noopener noreferrer">Link to my freeCodeCamp Profile</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Math Stuff</h2>
-									<p>Much of my experience as a mathematician unsurprisingly has become incredibly useful on transitioning to coding.</p>
-									<ul class="mathlist">
-										<li>Graduated From Fairmont State Univeristy in May 2023</li>
-										<li>Research Experience</li>
-										<li>Practiced in Active Learning</li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="#" class="image"><img src="images/pic03.jpg" alt="" data-position="25% 25%" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Looking toward the future</h2>
-									<p>Eventually I'd like to find myself transitioning into game development on an at least semi-profesional basis.</p>
-									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-					</section>
+    <section id="skills">
+      <h2>Technical Skills</h2>
+      <div class="skills-list">
+        <span class="skill-pill">Java</span>
+        <span class="skill-pill">Python</span>
+        <span class="skill-pill">JavaScript (ES6+)</span>
+        <span class="skill-pill">C++</span>
+        <span class="skill-pill">HTML5 &amp; CSS3</span>
+        <span class="skill-pill">Data Structures &amp; Algorithms</span>
+        <span class="skill-pill">Object-Oriented Programming</span>
+        <span class="skill-pill">Git &amp; GitHub</span>
+        <span class="skill-pill">Linear Algebra &amp; Numerical Methods</span>
+      </div>
+    </section>
 
-				<!-- Two -->
-					<section id="two" class="wrapper style3 fade-up">
-						<div class="inner">
-							<h2>What we do</h2>
-							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
-							<div class="features">
-								<section>
-									<span class="icon solid major fa-code"></span>
-									<h3>Lorem ipsum amet</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-lock"></span>
-									<h3>Aliquam sed nullam</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-cog"></span>
-									<h3>Sed erat ullam corper</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-desktop"></span>
-									<h3>Veroeros quis lorem</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-link"></span>
-									<h3>Urna quis bibendum</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon major fa-gem"></span>
-									<h3>Aliquam urna dapibus</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-							</div>
-							<ul class="actions">
-								<li><a href="generic.html" class="button">Learn more</a></li>
-							</ul>
-						</div>
-					</section>
-
-				<!-- Three -->
-					<section id="three" class="wrapper style1 fade-up">
-						<div class="inner">
-							<h2>Get in touch</h2>
-							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
-							<div class="split style1">
-								<section>
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<label for="name">Name</label>
-												<input type="text" name="name" id="name" />
-											</div>
-											<div class="field half">
-												<label for="email">Email</label>
-												<input type="text" name="email" id="email" />
-											</div>
-											<div class="field">
-												<label for="message">Message</label>
-												<textarea name="message" id="message" rows="5"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><a href="" class="button submit">Send Message</a></li>
-										</ul>
-									</form>
-								</section>
-								<section>
-									<ul class="contact">
-										<li>
-											<h3>Address</h3>
-											<span>12345 Somewhere Road #654<br />
-											Nashville, TN 00000-0000<br />
-											USA</span>
-										</li>
-										<li>
-											<h3>Email</h3>
-											<a href="#">user@untitled.tld</a>
-										</li>
-										<li>
-											<h3>Phone</h3>
-											<span>(000) 000-0000</span>
-										</li>
-										<li>
-											<h3>Social</h3>
-											<ul class="icons">
-												<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-												<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-												<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-												<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-												<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-											</ul>
-										</li>
-									</ul>
-								</section>
-							</div>
-						</div>
-					</section>
-
-			</div>
-
-		<!-- Footer -->
-			<footer id="footer" class="wrapper style1-alt">
-				<div class="inner">
-					<ul class="menu">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</div>
-			</footer>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+    <footer>
+      <p>&copy; 2026 Dallas Freeman. Built with semantic HTML5 &amp; CSS3.</p>
+    </footer>
+  </div>
+</body>
 </html>
